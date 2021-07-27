@@ -358,13 +358,12 @@ button[type='submit'] {
   display: inline-block;
   font-size: 0.9375rem;
   position: relative;
-  letter-spacing: 0.4px;
 }
 .banner .slider-wrapper .box-01 .content .btn-001 ul li:nth-child(2) a {
   background: transparent;
   border: solid 0.0625rem #222222;
   color: #222222;
-  margin-left: 32px;
+  margin-left: 10px;
 }
 
 .banner .slider-wrapper .box-01 .content .btn-001 ul li a {
@@ -382,7 +381,7 @@ button[type='submit'] {
 }
 
 .banner .container .box-33 {
-  margin: 40px 0px;
+  margin: 40px 0px 0px 0px;
 }
 .banner .container .box-33 .img-33 {
   width: 8%;
@@ -390,7 +389,9 @@ button[type='submit'] {
 .banner .container .box-33 .img {
   width: 10%;
 }
-
+.banner .container .box-33 .card {
+  margin: 0px;
+}
 .banner .container .box-33 h5 {
   font-size: 16px;
   margin-left: 20px;
@@ -416,13 +417,42 @@ button[type='submit'] {
     max-width: 100%;
     width: 100%;
   }
+  .banner .slider-wrapper .box-01 .content .btn-001 {
+    display: inline-block;
+    position: relative;
+  }
+  .banner .slider-wrapper .box-01 .content .btn-001 ul li {
+    display: inline-block;
+    font-size: 0.9375rem;
+    position: relative;
+  }
+  .banner .slider-wrapper .box-01 .content .btn-001 ul li:nth-child(2) a {
+    background: transparent;
+    border: solid 0.0625rem #222222;
+    color: #222222;
+    margin-left: 0px;
+  }
+
+  .banner .slider-wrapper .box-01 .content .btn-001 ul li a {
+    background: #0069d9;
+    border: 0;
+    padding: 10px 16px;
+    color: #fff;
+    transition: 0.4s;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+
   .banner .container .box-33 .img-33 {
     width: 30%;
   }
   .banner .container .box-33 .img {
     width: 30%;
   }
-
+  .banner .container .box-33 .card {
+    margin: 0px;
+  }
   .banner .container .box-33 .card-body {
     padding: 15px;
   }
@@ -657,12 +687,12 @@ button[type='submit'] {
     margin: 60px 0px 0px 0px;
   }
   .container .box-3 .demo-tutorial h3 {
-    font-size: 22px;
+    font-size: 20px;
     margin: 30px 0px 4px 0px;
     text-align: start;
   }
   .container .box-3 .demo-tutorial p {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     text-align: start;
   }
@@ -916,7 +946,7 @@ bg-02 .container .cal-box .heading {
   display: inline-block;
   font-size: 16px;
   font-weight: 400px;
-  color: #000;
+  color: #222222;
   font-weight: 200;
   text-align: start;
   padding-left: 30px;
@@ -965,7 +995,16 @@ bg-02 .container .cal-box .heading {
     font-weight: 400;
     color: #151515;
   }
-
+  .bg-02 .container .cal-box p {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400px;
+    color: #222222;
+    font-weight: 200;
+    text-align: start;
+    padding-left: 30px;
+    line-height: 27px;
+  }
   .bg-02 .container .cal-box .heading {
     margin: 0px;
   }
