@@ -389,7 +389,7 @@
 
 
                         $.ajax({
-                            url: 'https://edu.mobisium.com/mkt/api/search/tutor?q=a',
+                            url: 'https://edu.mobisium.com/mkt/api/search/tutor?q=Sci',
                             success: function (response) {
                                 var link = response.data;
 
@@ -400,12 +400,8 @@
                                     $.each(link, function () {
 
                                         profilelink = 'https://edu.mobisium.com/mkt/tutor/profile/' + this.userName;
-                                        if (this.profilePicture) {
-                                            url = 'https://edu.mobisium.com/mkt/images/' + this.data.profilePicture;
-                                        }
-                                        else {
-                                            url = 'https://ui-avatars.com/api/?size=80&background=D1E5F6&color=4777AF&name=' + this.fullName;
-                                        }
+                                        url = 'https://edu.mobisium.com/mkt/images/' + this._id + '.jpg';
+                                        xrl = 'https://ui-avatars.com/api/?size=80&background=D1E5F6&color=4777AF&name=' + this.fullName;
 
                                         $("#all-content").append(`
                                                 <div class="col-md-4 col-sm-12 overflow-auto">
@@ -414,8 +410,9 @@
                                                         <div class="row">
                                                             <div class="col-4" style="min-height: 85px;">
                                                                 <a href="${profilelink}" class="author-name"><img class="profile-picture"
-                                                                        src=${url}
-                                                                        alt="Profile Picture of writer"></a>
+                                                                        src=${url} 
+                                                                        onerror="this.onerror=null; this.src='${xrl}'"
+                                                                        alt="Profile Picture of tutor"></a>
                                                             </div>
                                                             <div class="col-8">
 
@@ -449,11 +446,8 @@
 
                                     $.each(link, function () {
                                         profilelink = 'https://edu.mobisium.com/mkt/tutor/profile/' + this.userName;
-                                        if (this.profilePicture) {
-                                            url = 'https://edu.mobisium.com/mkt/images/' + this.data.profilePicture;
-                                        } else {
-                                            url = 'https://ui-avatars.com/api/?size=80&background=D1E5F6&color=4777AF&name=' + this.fullName;
-                                        }
+                                        url = 'https://edu.mobisium.com/mkt/images/' + this._id + '.jpg';
+                                        xrl = 'https://ui-avatars.com/api/?size=80&background=D1E5F6&color=4777AF&name=' + this.fullName;
 
                                         $("#maths-content").append(`
                                             <div class="col-md-4 col-sm-12" style="max-height: 300px;">
@@ -463,8 +457,9 @@
                                                             <div class="col-4" style="min-height: 85px;">
                                                                 
                                                                 <a href="${profilelink}" class="author-name"><img class="profile-picture"
-                                                                        src=${url}
-                                                                        alt="Profile Picture of writer"></a>
+                                                                        src=${url} 
+                                                                        onerror="this.onerror=null; this.src='${xrl}'"
+                                                                        alt="Profile Picture of tutor"></a>
                                                             </div>
                                                             <div class="col-8">
 
@@ -489,6 +484,7 @@
 
 
 
+
                         $.ajax({
                             url: 'https://edu.mobisium.com/mkt/api/search/tutor?q=Science',
                             success: function (response) {
@@ -499,11 +495,10 @@
 
                                     $.each(link, function () {
                                         profilelink = 'https://edu.mobisium.com/mkt/tutor/profile/' + this.userName;
-                                        if (this.profilePicture) {
-                                            url = 'https://www.mobisium.com/mkt/tutor/images/' + this.profilePicture;
-                                        } else {
-                                            url = 'https://ui-avatars.com/api/?size=80&background=D1E5F6&color=4777AF&name=' + this.fullName;
-                                        }
+
+                                        url = 'https://edu.mobisium.com/mkt/images/' + this._id + '.jpg';
+                                        xrl = 'https://ui-avatars.com/api/?size=80&background=D1E5F6&color=4777AF&name=' + this.fullName;
+
 
                                         $("#science-content").append(`
                                             <div class="abc col-md-4 col-sm-12" style="max-height: 300px;">
@@ -511,10 +506,11 @@
                                                     <div class="card-body shadow-card">
                                                         <div class="row">
                                                             <div class="col-4" style="min-height: 85px;">
-                                                                
                                                                 <a href="${profilelink}" class="author-name"><img class="profile-picture"
-                                                                        src=${url}
-                                                                        alt="Profile Picture of writer"></a>
+                                                                        src=${url} 
+                                                                        onerror="this.onerror=null; this.src='${xrl}'"
+                                                                        alt="Profile Picture of tutor"></a>
+                                                                
                                                             </div>
                                                             <div class="col-8">
 
@@ -547,11 +543,8 @@
 
                                     $.each(link, function () {
                                         profilelink = 'https://edu.mobisium.com/mkt/tutor/profile/' + this.userName;
-                                        if (this.profilePicture) {
-                                            url = 'https://edu.mobisium.com/mkt/images/' + this.data.profilePicture;
-                                        } else {
-                                            url = 'https://ui-avatars.com/api/?size=80&background=D1E5F6&color=4777AF&name=' + this.fullName;
-                                        }
+                                        url = 'https://edu.mobisium.com/mkt/images/' + this._id + '.jpg';
+                                        xrl = 'https://ui-avatars.com/api/?size=80&background=D1E5F6&color=4777AF&name=' + this.fullName;
 
                                         $("#english-content").append(`
                                             <div class="col-md-4 col-sm-12" style="max-height: 300px;">
@@ -561,8 +554,9 @@
                                                             <div class="col-4" style="min-height: 85px;">
                                                                 
                                                                 <a href="${profilelink}" class="author-name"><img class="profile-picture"
-                                                                        src=${url}
-                                                                        alt="Profile Picture of writer"></a>
+                                                                        src=${url} 
+                                                                        onerror="this.onerror=null; this.src='${xrl}'"
+                                                                        alt="Profile Picture of tutor"></a>
                                                             </div>
                                                             <div class="col-8">
 
@@ -594,11 +588,8 @@
 
                                     $.each(link, function () {
                                         profilelink = 'https://edu.mobisium.com/mkt/tutor/profile/' + this.userName;
-                                        if (this.profilePicture) {
-                                            url = 'https://edu.mobisium.com/mkt/images/' + this.data.profilePicture;
-                                        } else {
-                                            url = 'https://ui-avatars.com/api/?size=80&background=D1E5F6&color=4777AF&name=' + this.fullName;
-                                        }
+                                        url = 'https://edu.mobisium.com/mkt/images/' + this._id + '.jpg';
+                                        xrl = 'https://ui-avatars.com/api/?size=80&background=D1E5F6&color=4777AF&name=' + this.fullName;
 
                                         $("#physics-content").append(`
                                             <div class="col-md-4 col-sm-12" style="max-height: 300px;">
@@ -608,8 +599,9 @@
                                                             <div class="col-4" style="min-height: 85px;">
                                                                 
                                                                 <a href="${profilelink}" class="author-name"><img class="profile-picture"
-                                                                        src=${url}
-                                                                        alt="Profile Picture of writer"></a>
+                                                                        src=${url} 
+                                                                        onerror="this.onerror=null; this.src='${xrl}'"
+                                                                        alt="Profile Picture of tutor"></a>
                                                             </div>
                                                             <div class="col-8">
 
@@ -641,11 +633,8 @@
 
                                     $.each(link, function () {
                                         profilelink = 'https://edu.mobisium.com/mkt/tutor/profile/' + this.userName;
-                                        if (this.profilePicture) {
-                                            url = 'https://edu.mobisium.com/mkt/images/' + this.data.profilePicture;
-                                        } else {
-                                            url = 'https://ui-avatars.com/api/?size=80&background=D1E5F6&color=4777AF&name=' + this.fullName;
-                                        }
+                                        url = 'https://edu.mobisium.com/mkt/images/' + this._id + '.jpg';
+                                        xrl = 'https://ui-avatars.com/api/?size=80&background=D1E5F6&color=4777AF&name=' + this.fullName;
 
                                         $("#history-content").append(`
                                             <div class="col-md-4 col-sm-12" style="max-height: 300px;">
@@ -655,8 +644,9 @@
                                                             <div class="col-4" style="min-height: 85px;">
                                                                 
                                                                 <a href="${profilelink}" class="author-name"><img class="profile-picture"
-                                                                        src=${url}
-                                                                        alt="Profile Picture of writer"></a>
+                                                                        src=${url} 
+                                                                        onerror="this.onerror=null; this.src='${xrl}'"
+                                                                        alt="Profile Picture of tutor"></a>
                                                             </div>
                                                             <div class="col-8">
 
@@ -688,11 +678,8 @@
 
                                     $.each(link, function () {
                                         profilelink = 'https://edu.mobisium.com/mkt/tutor/profile/' + this.userName;
-                                        if (this.profilePicture) {
-                                            url = 'https://edu.mobisium.com/mkt/images/' + this.data.profilePicture;
-                                        } else {
-                                            url = 'https://ui-avatars.com/api/?size=80&background=D1E5F6&color=4777AF&name=' + this.fullName;
-                                        }
+                                        url = 'https://edu.mobisium.com/mkt/images/' + this._id + '.jpg';
+                                        xrl = 'https://ui-avatars.com/api/?size=80&background=D1E5F6&color=4777AF&name=' + this.fullName;
 
                                         $("#biology-content").append(`
                                             <div class="col-md-4 col-sm-12" style="max-height: 300px;">
@@ -702,8 +689,9 @@
                                                             <div class="col-4" style="min-height: 85px;">
                                                                 
                                                                 <a href="${profilelink}" class="author-name"><img class="profile-picture"
-                                                                        src=${url}
-                                                                        alt="Profile Picture of writer"></a>
+                                                                        src=${url} 
+                                                                        onerror="this.onerror=null; this.src='${xrl}'"
+                                                                        alt="Profile Picture of tutor"></a>
                                                             </div>
                                                             <div class="col-8">
 
@@ -735,11 +723,8 @@
 
                                     $.each(link, function () {
                                         profilelink = 'https://edu.mobisium.com/mkt/tutor/profile/' + this.userName;
-                                        if (this.profilePicture) {
-                                            url = 'https://edu.mobisium.com/mkt/images/' + this.data.profilePicture;
-                                        } else {
-                                            url = 'https://ui-avatars.com/api/?size=80&background=D1E5F6&color=4777AF&name=' + this.fullName;
-                                        }
+                                        url = 'https://edu.mobisium.com/mkt/images/' + this._id + '.jpg';
+                                        xrl = 'https://ui-avatars.com/api/?size=80&background=D1E5F6&color=4777AF&name=' + this.fullName;
 
                                         $("#chemistry-content").append(`
                                             <div class="col-md-4 col-sm-12" style="max-height: 300px;">
@@ -749,8 +734,9 @@
                                                             <div class="col-4" style="min-height: 85px;">
                                                                 
                                                                 <a href="${profilelink}" class="author-name"><img class="profile-picture"
-                                                                        src=${url}
-                                                                        alt="Profile Picture of writer"></a>
+                                                                        src=${url} 
+                                                                        onerror="this.onerror=null; this.src='${xrl}'"
+                                                                        alt="Profile Picture of tutor"></a>
                                                             </div>
                                                             <div class="col-8">
 
