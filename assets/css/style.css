@@ -283,7 +283,7 @@ button[type='submit'] {
 }
 
 .banner {
-  padding: 2.25rem 10rem 0rem 10rem;
+  padding: 2rem 10rem 0rem 10rem;
   position: relative;
   z-index: 9;
   background: #fff;
@@ -381,7 +381,7 @@ button[type='submit'] {
 }
 
 .banner .container .box-33 {
-  margin: 40px 0px 0px 0px;
+  margin: 60px 0px 0px 0px;
 }
 .banner .container .box-33 .img-33 {
   width: 8%;
@@ -514,6 +514,7 @@ button[type='submit'] {
   margin: 30px;
 }
 .container .box {
+  margin-top: 60px;
   padding-bottom: 12px;
 }
 
@@ -560,7 +561,7 @@ button[type='submit'] {
 }
 
 /*feature tutor*/
-.container .icon-box {
+/* .container .icon-box {
   margin-top: 80px;
 }
 .container .icon-box btn {
@@ -602,8 +603,14 @@ button[type='submit'] {
 .writer-card {
   text-align: left !important;
   align-items: center;
-  margin-top: 3px !important;
+  margin-top: 8px !important;
   margin-bottom: 3px !important;
+}
+
+.container .icon-box .writer-card .shadow-card {
+  align-items: center;
+  height: 130px;
+  margin: 0px;
 }
 
 .writer-name {
@@ -629,23 +636,32 @@ button[type='submit'] {
   transition: 0.4s;
   cursor: pointer;
   border-radius: 40px;
-}
-
-.author-name {
-  color: #333;
-  text-decoration: none;
+}*/
+.writer-name {
+  font-size: 1.1rem;
+  text-align: left;
 }
 
 .writer-genre {
-  font-size: 0.8rem;
-}
-.profile-picture {
-  max-width: 80px;
-  border-radius: 50%;
+  font-size: 0.9rem;
+  text-align: left;
+  font-weight: 400;
 }
 
-.writer-card .card-body {
-  padding: 0.4rem;
+.author-name {
+  color: #222222;
+  text-decoration: none;
+}
+
+.profile-picture {
+  max-width: 80px;
+  border-radius: 30%;
+}
+
+@media (max-width: 768px) and (min-width: 576px) {
+  .container .icon-box {
+    margin: 50px;
+  }
 }
 
 /*demo classes*/
